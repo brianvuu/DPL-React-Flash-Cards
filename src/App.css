@@ -1,0 +1,40 @@
+.author {
+  font-family: avenir;
+  color: white;
+  font-size: 1rem;
+  margin-left: -150px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 105px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 120px;
+  padding: 50px;
+  color:rgb(86,213,250);
+}
+
+.App-title {
+  vertical-align: top;
+  font-size: 5em;
+  font-family: helvetica neue;
+  font-weight: 100;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
