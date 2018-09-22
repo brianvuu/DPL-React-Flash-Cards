@@ -1,8 +1,8 @@
 .author {
   font-family: avenir;
   color: white;
-  font-size: 1rem;
-  margin-left: -150px;
+  font-size: 1.5rem;
+  margin-left: -350px;
 }
 
 .App {
@@ -33,6 +33,21 @@
 .App-intro {
   font-size: large;
 }
+
+.Cards-container {
+  margin: 20px, auto, 0px, auto;
+  display: flex;
+}
+
+.Cards {
+width: 400px;
+height: 200px;
+margin-left: 10px;
+margin-right: 10px;
+background-color: white;
+border: solid black 1px;
+border-top: solid black 10px; 
+} 
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
