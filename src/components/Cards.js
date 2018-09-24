@@ -1,44 +1,31 @@
-// import React from 'react';
+import React from 'react';
+import QuizItems from './QuizItems';
 
-// class Cards extends React.Component {
+class Cards extends React.Component {
 
-// 	render() {
+	render() {
 
-// 		const cards = React.createElement(
-// 			'div',
-// 			{style: {
-// 				width: '400px',
-// 				height: '200px',
-// 				marginLeft: '10px',
-// 				marginRight: '10px',
-// 				backgroundColor: 'white',
-// 				border: 'solid black 1px',
-// 				borderTop: 'solid black 10px', } 
-// 			},
-// 		)
-      
-// 		const container = React.createElement(
-// 			'div',
-// 			{style: {
-// 				margin: '20px auto 0 auto',
-// 				width: '1200px',
-// 				height: 'auto',
-// 				padding: '10px',
-// 				display: 'flex',
-// 				}
-// 			},
-// 			cards,
-// 			cards,
-// 			cards,
-// 		)
+		let test;
+		if(this.props.quiz){
+			test = this.props.quiz.map(quiz => {
+				return(
+          <div className="Cards">
+            <strong>					
+              <QuizItems key={quiz.question} quiz={quiz} />
+            </strong>
+          </div>
+				)
+			})
+		}
 
-// 		return(
-// 			<div>
-// 				{ React.createElement( 'div', {}, container )}
-// 			</div>
-// 		)
-// 	}
+		return (
+			<div className="Cards-container">
+				{ test }
+			</div>
+		)
+	}
 
-// }
+}
 
-// export default Cards;
+export default Cards;
+        
